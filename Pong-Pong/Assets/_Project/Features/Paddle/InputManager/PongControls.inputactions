@@ -3,13 +3,13 @@
     "name": "PongControls",
     "maps": [
         {
-            "name": "Move",
-            "id": "e9edeb2e-c48a-4c3e-b136-c19864b5d0b1",
+            "name": "P1",
+            "id": "7c81d363-a329-4bc4-b11d-bb15d0eac934",
             "actions": [
                 {
-                    "name": "Up and Down",
+                    "name": "Move",
                     "type": "Value",
-                    "id": "51e08132-6f78-46ec-9d96-5373276a891e",
+                    "id": "5bc506d3-dfca-4b2d-a544-ca60289415d2",
                     "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
@@ -19,79 +19,86 @@
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "0cb4ff87-b868-4594-9d76-76d95d527441",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";P1_Scheme",
-                    "action": "Up and Down",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
                     "name": "1D Axis",
-                    "id": "e93df44d-09e4-44e2-95bc-9eb6a33170ff",
+                    "id": "052e666d-f3dc-4585-abdb-94d868f65019",
                     "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Up and Down",
+                    "action": "Move",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "positive",
-                    "id": "a1bf7264-cb58-4d51-bda0-8fdf5cdd1b4c",
+                    "id": "4c43cad4-ca34-4036-b501-3f2104e018f2",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";P1_Scheme",
-                    "action": "Up and Down",
+                    "groups": "",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "negative",
-                    "id": "b475484c-6432-4426-a182-f7463a11f2ca",
+                    "id": "db8a7204-5d01-4221-bbba-ed3916e9e0cb",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";P1_Scheme",
-                    "action": "Up and Down",
+                    "groups": "",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
-                },
+                }
+            ]
+        },
+        {
+            "name": "P2",
+            "id": "16c97373-dbcf-4e81-b0bb-f36b07a0abcc",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "336fd120-0b85-4bd3-b3fa-e608043b1a98",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true,
+                    "priority": 0
+                }
+            ],
+            "bindings": [
                 {
                     "name": "1D Axis",
-                    "id": "30a6aaf7-388c-4ea8-9124-c14dc83e3c4b",
+                    "id": "4a5f3fa8-7922-4ce9-8724-94d63d28c75e",
                     "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Up and Down",
+                    "action": "Move",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "positive",
-                    "id": "ea789634-e869-4f72-891a-a95f5814adf9",
+                    "name": "Positive",
+                    "id": "eefdf54d-c2e0-4f09-b69e-724ccb04328f",
                     "path": "<Keyboard>/o",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";P2_Scheme",
-                    "action": "Up and Down",
+                    "groups": ";PlayerInput",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "negative",
-                    "id": "edfacaed-3ae9-4c97-9022-9540ee1abb75",
+                    "name": "Negative",
+                    "id": "faa1ca83-07f2-4df1-a4fa-ef613b6d5b27",
                     "path": "<Keyboard>/l",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";P2_Scheme",
-                    "action": "Up and Down",
+                    "groups": ";PlayerInput",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }
@@ -100,14 +107,15 @@
     ],
     "controlSchemes": [
         {
-            "name": "P1_Scheme",
-            "bindingGroup": "P1_Scheme",
-            "devices": []
-        },
-        {
-            "name": "P2_Scheme",
-            "bindingGroup": "P2_Scheme",
-            "devices": []
+            "name": "PlayerInput",
+            "bindingGroup": "PlayerInput",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
         }
     ]
 }

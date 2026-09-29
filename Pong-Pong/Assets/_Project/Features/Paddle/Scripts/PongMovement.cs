@@ -1,19 +1,18 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(PlayerInput))]
 public class PongMovement : MonoBehaviour
 {
-
     [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private InputActionReference moveAction;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    void OnEnable() => moveAction.action.Enable();
+    void OnDisable() => moveAction.action.Disable();
 
-    // Update is called once per frame
     void Update()
     {
-
+        float move = moveAction.action.ReadValue<float>();
+        transform.position += Vector3.up * move * moveSpeed * Time.deltaTime;
     }
 }

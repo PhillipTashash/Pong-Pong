@@ -340,7 +340,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1153759054
+--- !u!1001 &1865635035
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -350,11 +350,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5739748959352165158, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.73
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5739748959352165158, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.36
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5739748959352165158, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -394,7 +394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8734894404018457460, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
       propertyPath: m_TagString
-      value: RightPaddle
+      value: LeftPaddle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -402,20 +402,23 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8734894404018457460, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1153759056}
+      addedObject: {fileID: 1865635038}
+    - targetCorrespondingSourceObject: {fileID: 8734894404018457460, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1865635037}
   m_SourcePrefab: {fileID: 100100000, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
---- !u!1 &1153759055 stripped
+--- !u!1 &1865635036 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8734894404018457460, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
-  m_PrefabInstance: {fileID: 1153759054}
+  m_PrefabInstance: {fileID: 1865635035}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1153759056
+--- !u!114 &1865635037
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1153759055}
+  m_GameObject: {fileID: 1865635036}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
@@ -435,10 +438,23 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: P2_Scheme
-  m_DefaultActionMap: Move
+  m_DefaultControlScheme: PlayerInput
+  m_DefaultActionMap: P2
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1865635038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865635036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da48f27ede27dab4d86bdd12b59c1ccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PongMovement
+  moveSpeed: 5
 --- !u!1001 &3163313865469866335
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -449,11 +465,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5739748959352165158, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.78
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 5739748959352165158, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5739748959352165158, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -537,8 +553,8 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: P1_Scheme
-  m_DefaultActionMap: Move
+  m_DefaultControlScheme: PlayerInput
+  m_DefaultActionMap: P1
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &3163313865469866338
@@ -561,4 +577,4 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 3163313865469866335}
-  - {fileID: 1153759054}
+  - {fileID: 1865635035}
