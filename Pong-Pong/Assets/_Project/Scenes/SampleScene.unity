@@ -390,13 +390,55 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8734894404018457460, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
       propertyPath: m_Name
-      value: Right Pong
+      value: Right Paddle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8734894404018457460, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
+      propertyPath: m_TagString
+      value: RightPaddle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8734894404018457460, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1153759056}
   m_SourcePrefab: {fileID: 100100000, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
+--- !u!1 &1153759055 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8734894404018457460, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
+  m_PrefabInstance: {fileID: 1153759054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1153759056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153759055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
+  m_Actions: {fileID: -944628639613478452, guid: 59686ff31dae34143a2c98b2714e8336, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: P2_Scheme
+  m_DefaultActionMap: Move
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1001 &3163313865469866335
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -447,13 +489,71 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8734894404018457460, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
       propertyPath: m_Name
-      value: Left Pong
+      value: Left Paddle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8734894404018457460, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
+      propertyPath: m_TagString
+      value: LeftPaddle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8734894404018457460, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3163313865469866338}
+    - targetCorrespondingSourceObject: {fileID: 8734894404018457460, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3163313865469866337}
   m_SourcePrefab: {fileID: 100100000, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
+--- !u!1 &3163313865469866336 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8734894404018457460, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
+  m_PrefabInstance: {fileID: 3163313865469866335}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3163313865469866337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3163313865469866336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
+  m_Actions: {fileID: -944628639613478452, guid: 59686ff31dae34143a2c98b2714e8336, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: P1_Scheme
+  m_DefaultActionMap: Move
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &3163313865469866338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3163313865469866336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da48f27ede27dab4d86bdd12b59c1ccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PongMovement
+  moveSpeed: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
