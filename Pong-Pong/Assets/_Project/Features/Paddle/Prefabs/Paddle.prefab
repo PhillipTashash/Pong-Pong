@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5739748959352165158}
   - component: {fileID: 2575774417341139143}
   m_Layer: 0
-  m_Name: Pong
+  m_Name: Paddle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
