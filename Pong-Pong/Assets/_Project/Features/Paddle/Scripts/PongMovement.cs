@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[RequireComponent(typeof(PlayerInput))]
 public class PongMovement : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f;

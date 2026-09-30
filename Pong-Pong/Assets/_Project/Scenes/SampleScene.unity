@@ -454,7 +454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8734894404018457460, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
       propertyPath: m_TagString
-      value: LeftPaddle
+      value: Paddle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -570,7 +570,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8734894404018457460, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
       propertyPath: m_TagString
-      value: LeftPaddle
+      value: Paddle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
