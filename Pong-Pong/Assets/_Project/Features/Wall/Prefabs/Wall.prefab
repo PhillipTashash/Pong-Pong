@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 3050765192579730599}
   - component: {fileID: 5911560665382662410}
   - component: {fileID: 2411607794203689599}
+  - component: {fileID: 7939792259034238884}
   m_Layer: 0
   m_Name: LeftBound
   m_TagString: Untagged
@@ -171,6 +172,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &7939792259034238884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7195546109185103937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c734cb3d93730b4e9da26bc7bda0d13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WallSizer
 --- !u!1 &8445229252805972623
 GameObject:
   m_ObjectHideFlags: 0
@@ -182,6 +195,7 @@ GameObject:
   - component: {fileID: 2580675124504008869}
   - component: {fileID: 2501770603854955881}
   - component: {fileID: 6343406442258796440}
+  - component: {fileID: 4922513507422606697}
   m_Layer: 0
   m_Name: RightBound
   m_TagString: Untagged
@@ -309,3 +323,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4922513507422606697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8445229252805972623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c734cb3d93730b4e9da26bc7bda0d13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WallSizer
