@@ -201,7 +201,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215688, g: 0.31727552, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -355,6 +355,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1628310498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1628310500}
+  - component: {fileID: 1628310499}
+  m_Layer: 0
+  m_Name: BallSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1628310499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628310498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b735c6ec736db7649b62564e961c5703, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnBall
+  ballPrefab: {fileID: 9175148323404089839, guid: 67369a6789954f04e907f53e0d38e4bf, type: 3}
+--- !u!4 &1628310500
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628310498}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1865635035
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -405,11 +450,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8734894404018457460, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
       propertyPath: m_Name
-      value: Right Paddle
+      value: RightPaddle
       objectReference: {fileID: 0}
     - target: {fileID: 8734894404018457460, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
       propertyPath: m_TagString
-      value: LeftPaddle
+      value: Paddle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -471,6 +516,75 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PongMovement
   moveSpeed: 5
   moveAction: {fileID: -500033680441061624, guid: 59686ff31dae34143a2c98b2714e8336, type: 3}
+--- !u!1001 &1209396668169707803
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4536194814122729690, guid: b733491935c35c44a866845dea50ae45, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536194814122729690, guid: b733491935c35c44a866845dea50ae45, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536194814122729690, guid: b733491935c35c44a866845dea50ae45, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536194814122729690, guid: b733491935c35c44a866845dea50ae45, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536194814122729690, guid: b733491935c35c44a866845dea50ae45, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536194814122729690, guid: b733491935c35c44a866845dea50ae45, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536194814122729690, guid: b733491935c35c44a866845dea50ae45, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536194814122729690, guid: b733491935c35c44a866845dea50ae45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536194814122729690, guid: b733491935c35c44a866845dea50ae45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536194814122729690, guid: b733491935c35c44a866845dea50ae45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607877975523739095, guid: b733491935c35c44a866845dea50ae45, type: 3}
+      propertyPath: m_Name
+      value: TopAndBottomBound
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607877975523739095, guid: b733491935c35c44a866845dea50ae45, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 7195546109185103937, guid: b733491935c35c44a866845dea50ae45, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 8445229252805972623, guid: b733491935c35c44a866845dea50ae45, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b733491935c35c44a866845dea50ae45, type: 3}
 --- !u!1001 &3163313865469866335
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -521,11 +635,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8734894404018457460, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
       propertyPath: m_Name
-      value: Left Paddle
+      value: LeftPaddle
       objectReference: {fileID: 0}
     - target: {fileID: 8734894404018457460, guid: 67c61febc72af8a40a0fd4e7ee6f0acf, type: 3}
       propertyPath: m_TagString
-      value: LeftPaddle
+      value: Paddle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -595,3 +709,5 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 3163313865469866335}
   - {fileID: 1865635035}
+  - {fileID: 1628310500}
+  - {fileID: 1209396668169707803}
