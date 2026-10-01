@@ -107,6 +107,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallGameplayLoop
   moveSpeed: 3
+  startVectorX: 1
+  startVectorY: 0
+  speedAddWhenHitPaddle: 1.1
 --- !u!58 &3366618716304607039
 CircleCollider2D:
   m_ObjectHideFlags: 0
