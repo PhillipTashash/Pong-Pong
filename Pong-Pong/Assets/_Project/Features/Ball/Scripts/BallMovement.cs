@@ -6,7 +6,7 @@ public class BallMovement : MonoBehaviour
 {
     [SerializeField]private float moveSpeed = 1f;
     //Movement speed we will multiple by the .normalized linear velocity script.
-    private Vector2 startMoveVector = new Vector2(1f, 1f);
+    private Vector2 startMoveVector = new Vector2(1f, 0f);
     //Set the initial movement vector for the ball.
     Rigidbody2D rb;
     //Create the rigidbody component for the ball.
@@ -28,13 +28,18 @@ public class BallMovement : MonoBehaviour
         {
             // Handle collision with paddle.
             float offset = (transform.position.y - col.transform.position.y) / col.collider.bounds.size.y;
-            //
-            float dirX = -Mathf.Sign(v.x);
+            // By getting the difference between the balls position (y) and the paddle's position (y) you can
+            // determine where on the paddle the ball hits. Then if you divide the collision point by
+            //  the paddle's height, you get a value between -1 and 1.
+            float dirX = Mathf.Sign(transform.position.x - col.transform.position.x);
+            // Send the ball away from the paddle it touched.
             rb.linearVelocity = new Vector2(dirX, offset).normalized * moveSpeed;
+            moveSpeed *= 1.1f;
         }
-        else
+        else if (col.gameObject.CompareTag("Wall"))
         {
-            rb.linearVelocity = new Vector2(v.x, -v.y).normalized * moveSpeed;
+            float dirY = Mathf.Sign(transform.position.y - col.transform.position.y);
+            rb.linearVelocity = new Vector2(v.x, dirY).normalized * moveSpeed;
         }
     }
 }
