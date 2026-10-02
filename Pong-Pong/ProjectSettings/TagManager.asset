@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Paddle
   - Wall
+  - LeftScore
+  - RightScore
   layers:
   - Default
   - TransparentFX
