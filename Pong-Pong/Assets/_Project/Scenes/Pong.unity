@@ -177,11 +177,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7195546109185103937, guid: 2baf0e598bdbf63428b69fe0643ecc7c, type: 3}
       propertyPath: m_TagString
-      value: LeftScore
+      value: RightScore
       objectReference: {fileID: 0}
     - target: {fileID: 8445229252805972623, guid: 2baf0e598bdbf63428b69fe0643ecc7c, type: 3}
       propertyPath: m_TagString
-      value: RightScore
+      value: LeftScore
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
