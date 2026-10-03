@@ -83,7 +83,7 @@
                 {
                     "name": "Positive",
                     "id": "eefdf54d-c2e0-4f09-b69e-724ccb04328f",
-                    "path": "<Keyboard>/o",
+                    "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": ";PlayerInput",
@@ -94,7 +94,7 @@
                 {
                     "name": "Negative",
                     "id": "faa1ca83-07f2-4df1-a4fa-ef613b6d5b27",
-                    "path": "<Keyboard>/l",
+                    "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": ";PlayerInput",
