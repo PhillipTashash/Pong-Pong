@@ -149,7 +149,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: e5fdf7f1a4035b943a4a88967825115f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -316,11 +316,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 233f572b63ecb544ab61e3ca6c617f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Pong.Features::MainMenuBehavior
-  gameSceneName: Pong
-  resumeButtonName: ResumeButton
-  playButtonName: PlayButton
-  restartButtonName: RestartButton
-  quitButtonName: QuitButton
 --- !u!1 &2019729682
 GameObject:
   m_ObjectHideFlags: 0

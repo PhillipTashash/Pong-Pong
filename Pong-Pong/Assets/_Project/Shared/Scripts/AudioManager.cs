@@ -11,6 +11,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip[] typeSound;
     [SerializeField] private AudioClip clickSound;
     [SerializeField] private AudioClip pongStartSound;
+    [SerializeField] private AudioClip ballBounce;
 
     private AudioSource audioSource;
 
@@ -65,5 +66,9 @@ public class AudioManager : MonoBehaviour
     {
         PlaySound(clickSound);
         PlaySound(pongStartSound);
+    }
+    public void PlayBallBounce()
+    {
+        PlaySound(ballBounce);
     }
 }

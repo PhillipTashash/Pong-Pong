@@ -1,10 +1,10 @@
 :root {
-    --pong-grey: rgb(38, 35, 34);
-    --pong-red: rgb(99, 55, 44);
-    --pong-orange: rgb(201, 125, 96);
+    --pong-grey: #262322;
+    --pong-red: #63372c;
+    --pong-orange: #c97d60;
     --pong-pink: rgb(255, 188, 181);
-    --pong-cream: rgb(242, 229, 215);
-    --pong-cream-darker: rgb(199, 175, 151);
+    --pong-cream: #f2e5d7;
+    --pong-cream-darker: #c7af97;
 }
 
 .menu-root {
