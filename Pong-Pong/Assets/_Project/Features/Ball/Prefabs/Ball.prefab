@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7185588071321673920}
   - component: {fileID: 8575244292449486526}
   - component: {fileID: 7696602128196718459}
+  - component: {fileID: 5488194702815438554}
   - component: {fileID: 4625418040723661048}
   - component: {fileID: 1177005541093341442}
   m_Layer: 0
@@ -110,6 +111,18 @@ MonoBehaviour:
   startVectorX: 1
   startVectorY: 0
   speedAddWhenHitPaddle: 1.1
+--- !u!114 &5488194702815438554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9175148323404089839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373b45e44e3a4e34fbe148620ff42b34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Pong.Features::BallScore
 --- !u!50 &4625418040723661048
 Rigidbody2D:
   serializedVersion: 5

@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 public class BallMovement : MonoBehaviour
 {
     [SerializeField, Range(1f, 10f)]private float moveSpeed = 1f;
-    [SerializeField, Range(-10f, 10f)]private float startVectorX = 1f;
+    private float startVectorX = -1f;
     [SerializeField, Range(-10f, 10f)]private float startVectorY = 0f;
     [SerializeField, Range(1f, 2f)]private float speedAddWhenHitPaddle = 1.1f;
     //Movement speed we will multiple by the .normalized linear velocity script.
@@ -18,8 +18,9 @@ public class BallMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         //Initialize the rigidbody component.
+        startVectorX = Random.value < 0.5f ? -1 : 1;
         rb.linearVelocity = new Vector2(startVectorX, startVectorY).normalized * moveSpeed;
-        //Set the ball to start moving in the direction of startMoveVector.
+        //Set the ball to start moving in the direction of startMoveVector.        
     }
 
     void OnCollisionEnter2D(Collision2D col) //Ball colliding with something.
