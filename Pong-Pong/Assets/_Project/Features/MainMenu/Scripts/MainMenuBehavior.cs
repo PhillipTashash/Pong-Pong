@@ -4,17 +4,15 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuBehavior : MonoBehaviour
 {
-    
+    [Header("Scene Name(s)")]
     [SerializeField] private string gameSceneName = "Pong";
 
+    [Header("Button Name(s)")]
     //Name of all the buttons on the menu.
     [SerializeField] private string resumeButtonName = "ResumeButton";
     [SerializeField] private string playButtonName = "PlayButton";
     [SerializeField] private string restartButtonName = "RestartButton";
     [SerializeField] private string quitButtonName = "QuitButton";
-
-
-    
 
     void OnEnable()
     {
@@ -31,6 +29,7 @@ public class MainMenuBehavior : MonoBehaviour
         if (button != null)
         {
             button.clicked += action;
+            button.RegisterCallback<PointerEnterEvent>(evt => AudioManager.Instance.PlayHover());
         }
         else
         {
@@ -40,6 +39,7 @@ public class MainMenuBehavior : MonoBehaviour
 
     private void StartGame()
     {
+        AudioManager.Instance.PlayClick();
         SceneManager.LoadScene(gameSceneName, LoadSceneMode.Single);
     }
     private void QuitGame()

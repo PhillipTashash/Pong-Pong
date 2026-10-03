@@ -4,6 +4,7 @@
     --pong-orange: rgb(201, 125, 96);
     --pong-pink: rgb(255, 188, 181);
     --pong-cream: rgb(242, 229, 215);
+    --pong-cream-darker: rgb(199, 175, 151);
 }
 
 .menu-root {
@@ -23,6 +24,7 @@
     -unity-font-style: bold;
     -unity-text-align: middle-center;
     margin-bottom: 60px;
+    margin-top:20px;
 }
 
 .menu-button {
@@ -32,8 +34,8 @@
     background-color: var(--pong-red);
     border-width: 4px;
     border-color: var(--pong-cream);
-    border-radius: 0;
-    margin: 0 0 20px 0;
+    border-radius: 16;
+    margin: 16px 0 20px 0;
     transition-duration: 0.1s;
 }
 
@@ -46,21 +48,25 @@
     scale: 0.97 0.97;
 }
 
-.divider {
-    height: 2px;
-    background-color: var(--pong-cream);
-    margin: 16px 0;
+.controls-container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-width: 2px;
+    padding: 20px;
+    border-radius: 16px;
+    border-color: var(--pong-cream);
 }
 
 .section-label {
     font-size: 32px;
     color: var(--pong-cream);
     -unity-text-align: middle-center;
-    margin: 0px 0 16px 0;
+    margin: 0 0 16px 0;
+    -unity-font-style: bold;
 }
 
 .name-field {
-    margin: 0 0 12px 0;
+    margin: 16px 0 12px 0;
 }
 
 .name-field .unity-base-field__label {
@@ -76,6 +82,43 @@
     background-color: var(--pong-red);
     border-width: 2px;
     border-color: var(--pong-cream);
-    border-radius: 0;
+    border-radius: 16px;
     padding: 8px;
+}
+
+.slider-volume .unity-base-field__label {
+    font-size: 28px;
+    color: var(--pong-cream);
+    min-width: 200px;
+    -unity-text-align: middle-left;
+}
+
+.slider-volume .unity-base-slider__tracker {
+    height: 6px;
+    margin-top: -3px;
+    background-color: var(--pong-cream);
+    border-width: 1px;
+    border-color: var(--pong-cream);
+    border-radius: 0;
+}
+
+.slider-volume .unity-base-slider__fill {
+    background-color: var(--pong-orange);
+}
+
+.slider-volume .unity-base-slider__dragger {
+    width: 16px;
+    height: 28px;
+    margin-top: -14px;
+    background-color: var(--pong-cream);
+    border-width: 0;
+    border-radius: 5px;
+}
+
+.slider-volume:hover .unity-base-slider__dragger {
+    background-color: var(--pong-cream-darker);
+}
+
+.slider-volume:active .unity-base-slider__dragger {
+    scale: 1.1 1.1;
 }
