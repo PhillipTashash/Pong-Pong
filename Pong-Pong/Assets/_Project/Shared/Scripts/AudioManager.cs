@@ -8,6 +8,7 @@ public class AudioManager : MonoBehaviour
 
     [Header("UI Sounds")]
     [SerializeField] private AudioClip[] hoverSounds;
+    [SerializeField] private AudioClip[] typeSound;
     [SerializeField] private AudioClip clickSound;
     [SerializeField] private AudioClip pongStartSound;
 
@@ -47,6 +48,17 @@ public class AudioManager : MonoBehaviour
     {
         if (hoverSounds.Length == 0) return;
         PlaySound(hoverSounds[Random.Range(0, hoverSounds.Length)]);
+    }
+
+    public void SetMasterVolume(float volume)
+    {
+        AudioListener.volume = Mathf.Clamp01(volume);
+    }
+
+    public void PlayTypeSound()
+    {
+        if (typeSound.Length == 0) return;
+        PlaySound(typeSound[Random.Range(0, typeSound.Length)]);
     }
 
     public void PlayClick()
