@@ -9,6 +9,9 @@
 #Disallow my test builds
 /TestRuns
 
+#Disallow Audacity working audio
+.WorkingAudio/
+
 .utmp/
 /[Ll]ibrary/
 /[Tt]emp/
