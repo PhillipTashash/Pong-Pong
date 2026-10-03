@@ -1,0 +1,81 @@
+:root {
+    --pong-grey: rgb(38, 35, 34);
+    --pong-red: rgb(99, 55, 44);
+    --pong-orange: rgb(201, 125, 96);
+    --pong-pink: rgb(255, 188, 181);
+    --pong-cream: rgb(242, 229, 215);
+}
+
+.menu-root {
+    flex-grow: 1;
+    background-color: var(--pong-red);
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-panel {
+    width: 600px;
+}
+
+.title {
+    font-size: 160px;
+    color: var(--pong-cream);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-bottom: 60px;
+}
+
+.menu-button {
+    height: 90px;
+    font-size: 48px;
+    color: var(--pong-cream);
+    background-color: var(--pong-red);
+    border-width: 4px;
+    border-color: var(--pong-cream);
+    border-radius: 0;
+    margin: 0 0 20px 0;
+    transition-duration: 0.1s;
+}
+
+.menu-button:hover {
+    background-color: var(--pong-cream);
+    color: var(--pong-red);
+}
+
+.menu-button:active {
+    scale: 0.97 0.97;
+}
+
+.divider {
+    height: 2px;
+    background-color: var(--pong-cream);
+    margin: 16px 0;
+}
+
+.section-label {
+    font-size: 32px;
+    color: var(--pong-cream);
+    -unity-text-align: middle-center;
+    margin: 0px 0 16px 0;
+}
+
+.name-field {
+    margin: 0 0 12px 0;
+}
+
+.name-field .unity-base-field__label {
+    font-size: 28px;
+    color: var(--pong-cream);
+    min-width: 200px;
+    -unity-text-align: middle-left;
+}
+
+.name-field .unity-base-text-field__input {
+    font-size: 28px;
+    color: var(--pong-cream);
+    background-color: var(--pong-red);
+    border-width: 2px;
+    border-color: var(--pong-cream);
+    border-radius: 0;
+    padding: 8px;
+}

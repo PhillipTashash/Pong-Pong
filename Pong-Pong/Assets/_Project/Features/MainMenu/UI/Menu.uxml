@@ -1,10 +1,14 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement style="flex-grow: 1;">
-        <ui:Label text="Pong" name="Title" data-source-path="" parse-escape-sequences="true" style="-unity-text-align: upper-center;"/>
-        <ui:Button text="Play" name="PlayButton"/>
-        <ui:Button text="Quit" name="QuitButton"/>
-        <ui:Label text="Player Names" name="NameChooseLabel" data-source-path="" parse-escape-sequences="true" style="-unity-text-align: upper-center;"/>
-        <ui:TextField label="Left Player" placeholder-text="filler text" value="Player 1"/>
-        <ui:TextField label="Right Player" placeholder-text="filler text" value="Player 2"/>
+    <Style src="project://database/Assets/_Project/Features/MainMenu/UI/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=fcd4f8e2e8d7b994d8db1ed4cf558272&amp;type=3#MainMenuStyle"/>
+    <ui:VisualElement name="root" class="menu-root" style="flex-grow: 1;">
+        <ui:VisualElement name="menuPanel" class="menu-panel" style="flex-grow: 1;">
+            <ui:Label text="Pong" name="Title" data-source-path="" parse-escape-sequences="true" class="title" style="-unity-text-align: upper-center;"/>
+            <ui:Button text="Play" name="PlayButton" class="menu-button"/>
+            <ui:Button text="Quit" name="QuitButton" class="menu-button"/>
+            <ui:VisualElement name="Divider" class="divider"/>
+            <ui:Label text="Player Names" name="NameChooseLabel" data-source-path="" parse-escape-sequences="true" class="section-label" style="-unity-text-align: upper-center;"/>
+            <ui:TextField label="Left Player" placeholder-text="filler text" value="Player 1" class="name-field"/>
+            <ui:TextField label="Right Player" placeholder-text="filler text" value="Player 2" class="name-field"/>
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
