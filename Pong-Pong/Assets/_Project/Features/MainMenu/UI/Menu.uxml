@@ -1,0 +1,12 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:Label text="Pong" name="Title" data-source-path="" parse-escape-sequences="true" style="-unity-text-align: upper-center;"/>
+        <ui:Button text="Resume"/>
+        <ui:Button text="Play" name="PlayButton"/>
+        <ui:Button text="Restart" name="RestartButton"/>
+        <ui:Button text="Quit" name="QuitButton"/>
+        <ui:Label text="Change Player Names" name="NameChooseLabel" data-source-path="" parse-escape-sequences="true" style="-unity-text-align: upper-center;"/>
+        <ui:TextField label="Player 1" placeholder-text="filler text" value=""/>
+        <ui:TextField label="Player 2" placeholder-text="filler text"/>
+    </ui:VisualElement>
+</ui:UXML>
