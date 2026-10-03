@@ -576,6 +576,8 @@ MonoBehaviour:
   rightScore: 0
   pointsToAdd: 1
   pointsToWin: 5
+  leftPlayerName: Left Player
+  rightPlayerName: Right Player
   leftScoreText: {fileID: 1342259911}
   rightScoreText: {fileID: 1414674546}
   winnerPopup: {fileID: 1117702707}

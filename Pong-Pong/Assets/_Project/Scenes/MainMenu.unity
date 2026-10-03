@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 719375446}
   - component: {fileID: 719375445}
+  - component: {fileID: 719375447}
   m_Layer: 0
   m_Name: MainMenu
   m_TagString: Untagged
@@ -174,6 +175,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &719375447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719375444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 233f572b63ecb544ab61e3ca6c617f39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Pong.Features::MainMenuBehavior
 --- !u!1 &2019729682
 GameObject:
   m_ObjectHideFlags: 0
