@@ -13,11 +13,33 @@ public class scoreKeeper : MonoBehaviour
         {
             leftScore += pointsToAdd;
             Debug.Log("Left Score: " + leftScore);
+            CheckWinCondition();
         }
         else
         {
             rightScore += pointsToAdd;
             Debug.Log("Right Score: " + rightScore);
+            CheckWinCondition();
         }
+    }
+
+    public void CheckWinCondition()
+    {
+        if (leftScore >= pointsToWin)
+        {
+            Debug.Log("Left Player Wins!");
+            ResetScore();
+        }
+        else if (rightScore >= pointsToWin)
+        {
+            Debug.Log("Right Player Wins!");
+            ResetScore();
+        }
+    }
+
+    public void ResetScore()
+    {
+        leftScore = 0;
+        rightScore = 0;
     }
 }
