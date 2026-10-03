@@ -5,6 +5,13 @@
 # Recommended: add any editor/OS/tool-specific ignore rules from the Global/ templates as needed.
 # See: https://github.com/github/gitignore/tree/main/Global
 #
+
+#Disallow my test builds
+/TestRuns
+
+#Disallow Audacity working audio
+.WorkingAudio/
+
 .utmp/
 /[Ll]ibrary/
 /[Tt]emp/

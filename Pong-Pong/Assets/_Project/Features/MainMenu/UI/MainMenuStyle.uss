@@ -1,0 +1,124 @@
+:root {
+    --pong-grey: #262322;
+    --pong-red: #63372c;
+    --pong-orange: #c97d60;
+    --pong-pink: rgb(255, 188, 181);
+    --pong-cream: #f2e5d7;
+    --pong-cream-darker: #c7af97;
+}
+
+.menu-root {
+    flex-grow: 1;
+    background-color: var(--pong-red);
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-panel {
+    width: 600px;
+}
+
+.title {
+    font-size: 160px;
+    color: var(--pong-cream);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-bottom: 60px;
+    margin-top:20px;
+}
+
+.menu-button {
+    height: 90px;
+    font-size: 48px;
+    color: var(--pong-cream);
+    background-color: var(--pong-red);
+    border-width: 4px;
+    border-color: var(--pong-cream);
+    border-radius: 16;
+    margin: 16px 0 20px 0;
+    transition-duration: 0.1s;
+}
+
+.menu-button:hover {
+    background-color: var(--pong-cream);
+    color: var(--pong-red);
+}
+
+.menu-button:active {
+    scale: 0.97 0.97;
+}
+
+.controls-container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-width: 2px;
+    padding: 20px;
+    border-radius: 16px;
+    border-color: var(--pong-cream);
+}
+
+.section-label {
+    font-size: 32px;
+    color: var(--pong-cream);
+    -unity-text-align: middle-center;
+    margin: 0 0 16px 0;
+    -unity-font-style: bold;
+}
+
+.name-field {
+    margin: 16px 0 12px 0;
+}
+
+.name-field .unity-base-field__label {
+    font-size: 28px;
+    color: var(--pong-cream);
+    min-width: 200px;
+    -unity-text-align: middle-left;
+}
+
+.name-field .unity-base-text-field__input {
+    font-size: 28px;
+    color: var(--pong-cream);
+    background-color: var(--pong-red);
+    border-width: 2px;
+    border-color: var(--pong-cream);
+    border-radius: 16px;
+    padding: 8px;
+}
+
+.slider-volume .unity-base-field__label {
+    font-size: 28px;
+    color: var(--pong-cream);
+    min-width: 200px;
+    -unity-text-align: middle-left;
+}
+
+.slider-volume .unity-base-slider__tracker {
+    height: 6px;
+    margin-top: -3px;
+    background-color: var(--pong-cream);
+    border-width: 1px;
+    border-color: var(--pong-cream);
+    border-radius: 0;
+}
+
+.slider-volume .unity-base-slider__fill {
+    background-color: var(--pong-orange);
+}
+
+.slider-volume .unity-base-slider__dragger {
+    width: 16px;
+    height: 28px;
+    margin-top: -14px;
+    background-color: var(--pong-cream);
+    border-width: 0;
+    border-radius: 5px;
+}
+
+.slider-volume:hover .unity-base-slider__dragger {
+    background-color: var(--pong-cream-darker);
+}
+
+.slider-volume:active .unity-base-slider__dragger {
+    scale: 1.1 1.1;
+}

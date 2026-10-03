@@ -1,12 +1,19 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement style="flex-grow: 1;">
-        <ui:Label text="Pong" name="Title" data-source-path="" parse-escape-sequences="true" style="-unity-text-align: upper-center;"/>
-        <ui:Button text="Resume"/>
-        <ui:Button text="Play" name="PlayButton"/>
-        <ui:Button text="Restart" name="RestartButton"/>
-        <ui:Button text="Quit" name="QuitButton"/>
-        <ui:Label text="Change Player Names" name="NameChooseLabel" data-source-path="" parse-escape-sequences="true" style="-unity-text-align: upper-center;"/>
-        <ui:TextField label="Player 1" placeholder-text="filler text" value=""/>
-        <ui:TextField label="Player 2" placeholder-text="filler text"/>
+    <Style src="project://database/Assets/_Project/Features/MainMenu/UI/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=fcd4f8e2e8d7b994d8db1ed4cf558272&amp;type=3#MainMenuStyle"/>
+    <ui:VisualElement name="root" class="menu-root" style="flex-grow: 1;">
+        <ui:VisualElement name="menuPanel" class="menu-panel" style="flex-grow: 1;">
+            <ui:Label text="Pong" name="Title" data-source-path="" parse-escape-sequences="true" class="title" style="-unity-text-align: upper-center;"/>
+            <ui:Button text="Play" name="PlayButton" class="menu-button" style="-unity-font-style: bold;"/>
+            <ui:Button text="Quit" name="QuitButton" class="menu-button" style="-unity-font-style: bold;"/>
+            <ui:VisualElement name="PlayerNameZone" class="controls-container">
+                <ui:Label text="Player Names" name="NameChooseLabel" data-source-path="" parse-escape-sequences="true" class="section-label" style="-unity-text-align: upper-center; -unity-font-style: bold;"/>
+                <ui:TextField label="Left Player" placeholder-text="filler text" value="Player 1" name="LeftNameField" class="name-field"/>
+                <ui:TextField label="Right Player" placeholder-text="filler text" value="Player 2" name="RightNameField" class="name-field"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="VolumeZone" class="controls-container">
+                <ui:Label text="Volume" name="VolumeLabel" data-source-path="" parse-escape-sequences="true" class="section-label" style="-unity-text-align: upper-center; -unity-font-style: bold;"/>
+                <ui:SliderInt label="Main" value="30" high-value="100" name="VolumeSlider" class="slider-volume" style="opacity: 1;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

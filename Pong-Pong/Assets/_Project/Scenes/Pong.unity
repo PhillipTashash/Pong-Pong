@@ -374,7 +374,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 0}
+  m_BackGroundColor: {r: 0.38823533, g: 0.21568629, b: 0.17254902, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -444,6 +444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AspectRatioEnforcer
   aspectX: 4
   aspectY: 3
+  barColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,9 +577,68 @@ MonoBehaviour:
   rightScore: 0
   pointsToAdd: 1
   pointsToWin: 5
+  leftPlayerName: Left Player
+  rightPlayerName: Right Player
   leftScoreText: {fileID: 1342259911}
   rightScoreText: {fileID: 1414674546}
   winnerPopup: {fileID: 1117702707}
+--- !u!1001 &1042628966
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3727924971926468480, guid: ad5c833a250aa804990494a7d759e117, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605414935277571645, guid: ad5c833a250aa804990494a7d759e117, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 196.03021
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605414935277571645, guid: ad5c833a250aa804990494a7d759e117, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 173.76683
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605414935277571645, guid: ad5c833a250aa804990494a7d759e117, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605414935277571645, guid: ad5c833a250aa804990494a7d759e117, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605414935277571645, guid: ad5c833a250aa804990494a7d759e117, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605414935277571645, guid: ad5c833a250aa804990494a7d759e117, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605414935277571645, guid: ad5c833a250aa804990494a7d759e117, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605414935277571645, guid: ad5c833a250aa804990494a7d759e117, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605414935277571645, guid: ad5c833a250aa804990494a7d759e117, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605414935277571645, guid: ad5c833a250aa804990494a7d759e117, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ad5c833a250aa804990494a7d759e117, type: 3}
 --- !u!1 &1117702705
 GameObject:
   m_ObjectHideFlags: 0
@@ -1469,3 +1529,4 @@ SceneRoots:
   - {fileID: 1209396668169707803}
   - {fileID: 24932929}
   - {fileID: 1713413445}
+  - {fileID: 1042628966}

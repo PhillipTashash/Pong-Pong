@@ -108,7 +108,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallGameplayLoop
   moveSpeed: 3
-  startVectorX: 1
   startVectorY: 0
   speedAddWhenHitPaddle: 1.1
 --- !u!114 &5488194702815438554
@@ -123,6 +122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 373b45e44e3a4e34fbe148620ff42b34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Pong.Features::BallScore
+  tagNameOfLeftScore: LeftScore
+  tagNameOfRightScore: RightScore
 --- !u!50 &4625418040723661048
 Rigidbody2D:
   serializedVersion: 5

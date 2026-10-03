@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class BallScore : MonoBehaviour
 {
+    //TODO Something is fucky about the score system. Play test this somemore and be away that is not working 100%.
     private SpawnBall ballSpawner;
     private scoreKeeper scoreTracker;
     [SerializeField] private string tagNameOfLeftScore = "LeftScore";
