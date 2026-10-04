@@ -12,6 +12,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip[] ballBounce;
     [SerializeField] private AudioClip clickSound;
     [SerializeField] private AudioClip pongStartSound;
+    [SerializeField] private AudioClip[] goal;
 
 
     private AudioSource audioSource;
@@ -63,11 +64,22 @@ public class AudioManager : MonoBehaviour
         PlaySound(typeSound[Random.Range(0, typeSound.Length)]);
     }
 
+    public void PlayGoal()
+    {
+        if (goal.Length == 0) return;
+        PlaySound(goal[Random.Range(0, goal.Length)]);
+    }
+
     public void PlayClick()
     {
         PlaySound(clickSound);
+    }
+
+    public void PlayGameStart()
+    {
         PlaySound(pongStartSound);
     }
+
     public void PlayBallBounce()
     {
         if (ballBounce.Length == 0) return;

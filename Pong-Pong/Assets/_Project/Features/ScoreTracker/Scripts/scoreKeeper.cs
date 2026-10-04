@@ -18,6 +18,9 @@ public class scoreKeeper : MonoBehaviour
 
     public void AddScore(bool isLeftScore)
     {
+
+        AudioManager.Instance.PlayGoal();
+
         if (isLeftScore)
         {
             leftScore += pointsToAdd;

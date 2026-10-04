@@ -146,5 +146,21 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a3677938a5cff9644bf718e40ee2f972, type: 3}
   - {fileID: 8300000, guid: 7e8c09ed002065941bcdf61fac87aa51, type: 3}
   - {fileID: 8300000, guid: ea9354113b03cc242aa83b2b1349e2e3, type: 3}
+  typeSound: []
+  ballBounce:
+  - {fileID: 8300000, guid: 7ecd5d093da3a5749b1052add1ced646, type: 3}
+  - {fileID: 8300000, guid: e56072f6e8fd3194bad32849c4630653, type: 3}
+  - {fileID: 8300000, guid: 81a32b6239c4ca54e95b7682e76eb656, type: 3}
+  - {fileID: 8300000, guid: eb3ddea162201e44096d3c03f4153d4e, type: 3}
+  - {fileID: 8300000, guid: 35be12f81e8704c44b3bf89fd6b2bb99, type: 3}
+  - {fileID: 8300000, guid: 5155f3a4fa5798145b6f4ff1a5ad7031, type: 3}
+  - {fileID: 8300000, guid: 6d62a8bd13e7d474ba6766b504fa8463, type: 3}
+  - {fileID: 8300000, guid: 41c13ffaca2e003429145be4dc1cecdc, type: 3}
   clickSound: {fileID: 8300000, guid: 8995c64a7dd9aa448a6551809c298cf2, type: 3}
   pongStartSound: {fileID: 8300000, guid: 9ae5d155989cc7641830ca23459525bd, type: 3}
+  goal:
+  - {fileID: 8300000, guid: 1cb99a62bb2559e4b9707a7e13702805, type: 3}
+  - {fileID: 8300000, guid: 137cedc9191040b41b613e0b5d87ffeb, type: 3}
+  - {fileID: 8300000, guid: f0317d5dc5470284499f2bfce666f270, type: 3}
+  - {fileID: 8300000, guid: fb09dfe2701971c4f823474392543107, type: 3}
+  - {fileID: 8300000, guid: 345b0d1dee7d5e749abc129ffdbfc609, type: 3}

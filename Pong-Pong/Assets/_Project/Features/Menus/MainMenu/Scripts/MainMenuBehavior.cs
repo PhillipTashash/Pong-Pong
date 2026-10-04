@@ -7,8 +7,6 @@ public class MainMenuBehavior : MonoBehaviour
     private string gameSceneName = "Pong";
     private string playButtonName = "PlayButton";
     private string quitButtonName = "QuitButton";
-    private string leftNameField = "LeftNameField";
-    private string rightNameField = "RightNameField";
     private string volumeSlider = "VolumeSlider";
 
     void OnEnable()
@@ -17,8 +15,6 @@ public class MainMenuBehavior : MonoBehaviour
 
         BindButton(root, playButtonName, StartGame);
         BindButton(root, quitButtonName, QuitGame);
-        BindTextField(root, leftNameField, TypeSound);
-        BindTextField(root, rightNameField, TypeSound);
         BindSlider(root, volumeSlider, UpdateVolume);
     }
 
@@ -33,19 +29,6 @@ public class MainMenuBehavior : MonoBehaviour
         else
         {
             Debug.LogError("Button not found: " + buttonName);
-        }
-    }
-
-    private void BindTextField(VisualElement root, string textFieldName, System.Action action)
-    {
-        TextField textField = root.Q<TextField>(textFieldName);
-        if (textField != null)
-        {
-            textField.RegisterValueChangedCallback(evt => action());
-        }
-        else
-        {
-            Debug.LogError("TextField not found: " + textFieldName);
         }
     }
 
@@ -68,14 +51,10 @@ public class MainMenuBehavior : MonoBehaviour
         }
     }
 
-    private void TypeSound()
-    {
-        AudioManager.Instance.PlayTypeSound();
-    }
-
     private void StartGame()
     {
         AudioManager.Instance.PlayClick();
+        AudioManager.Instance.PlayGameStart();
         SceneManager.LoadScene(gameSceneName, LoadSceneMode.Single);
     }
     private void QuitGame()

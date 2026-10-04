@@ -1,0 +1,15 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Project/Shared/UI/StyleSheet/MenuStyle.uss?fileID=7433441132597879392&amp;guid=fcd4f8e2e8d7b994d8db1ed4cf558272&amp;type=3#MenuStyle"/>
+    <ui:VisualElement name="Root" class="pause-overlay">
+        <ui:VisualElement name="PauseMenu" class="pause-box">
+            <ui:Label text="Pong" name="Title" class="title"/>
+            <ui:Label text="Paused" name="PausedLabel" class="section-label" style="-unity-font-style: italic;"/>
+            <ui:Button text="Resume" name="ResumeButton" class="menu-button"/>
+            <ui:Button text="Quit" name="QuitButton" class="menu-button"/>
+            <ui:VisualElement name="VolumeContainer" class="controls-container">
+                <ui:Label text="Volume" name="VolumeLabel" class="section-label"/>
+                <ui:SliderInt label="Main" value="30" high-value="100" name="VolumeSlider" class="slider-volume"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

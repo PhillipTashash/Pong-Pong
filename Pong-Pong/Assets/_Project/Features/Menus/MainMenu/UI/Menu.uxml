@@ -5,11 +5,6 @@
             <ui:Label text="Pong" name="Title" data-source-path="" parse-escape-sequences="true" class="title" style="-unity-text-align: upper-center;"/>
             <ui:Button text="Play" name="PlayButton" class="menu-button" style="-unity-font-style: bold;"/>
             <ui:Button text="Quit" name="QuitButton" class="menu-button" style="-unity-font-style: bold;"/>
-            <ui:VisualElement name="PlayerNameZone" class="controls-container">
-                <ui:Label text="Player Names" name="NameChooseLabel" data-source-path="" parse-escape-sequences="true" class="section-label" style="-unity-text-align: upper-center; -unity-font-style: bold;"/>
-                <ui:TextField label="Left Player" placeholder-text="filler text" value="Player 1" name="LeftNameField" class="name-field"/>
-                <ui:TextField label="Right Player" placeholder-text="filler text" value="Player 2" name="RightNameField" class="name-field"/>
-            </ui:VisualElement>
             <ui:VisualElement name="VolumeZone" class="controls-container">
                 <ui:Label text="Volume" name="VolumeLabel" data-source-path="" parse-escape-sequences="true" class="section-label" style="-unity-text-align: upper-center; -unity-font-style: bold;"/>
                 <ui:SliderInt label="Main" value="30" high-value="100" name="VolumeSlider" class="slider-volume" style="opacity: 1;"/>
