@@ -28,11 +28,11 @@ public class BallMovement : MonoBehaviour
         Vector2 v = rb.linearVelocity;
         //Get the current linear velocity of the ball.
 
-        AudioManager.Instance.PlayBallBounce();
-        //TODO Add custom ball bounce sound. Right now  using Epidemic sound.
+        
 
         if (col.gameObject.CompareTag("Paddle")) // P1 and P2 paddles.
         {
+            BallBounceSound();
             // Handle collision with paddle.
             float offset = (transform.position.y - col.transform.position.y) / col.collider.bounds.size.y;
             // By getting the difference between the balls position (y) and the paddle's position (y) you can
@@ -45,10 +45,16 @@ public class BallMovement : MonoBehaviour
         }
         else if (col.gameObject.CompareTag("Wall")) //Top and bottom walls.
         {
+            BallBounceSound();
             float dirY = Mathf.Sign(transform.position.y - col.transform.position.y);
             // Determine the direction the ball should bounce based on the wall it hit.
             rb.linearVelocity = new Vector2(v.x, dirY).normalized * moveSpeed;
             // Change the direction the ball bounces.
         }
+    }
+
+    private void BallBounceSound()
+    {
+        AudioManager.Instance.PlayBallBounce();
     }
 }

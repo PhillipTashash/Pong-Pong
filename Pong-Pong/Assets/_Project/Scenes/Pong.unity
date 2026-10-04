@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScoreWall
       objectReference: {fileID: 0}
+    - target: {fileID: 4607877975523739095, guid: 2baf0e598bdbf63428b69fe0643ecc7c, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 7195546109185103937, guid: 2baf0e598bdbf63428b69fe0643ecc7c, type: 3}
       propertyPath: m_Icon
       value: 
