@@ -57,6 +57,7 @@ public class scoreKeeper : MonoBehaviour
     {
         leftScore = 0;
         rightScore = 0;
+        UpdateScoreText();
     }
 
     private void UpdateScoreText()
