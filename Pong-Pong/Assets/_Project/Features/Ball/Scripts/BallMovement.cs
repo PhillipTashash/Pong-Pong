@@ -28,6 +28,9 @@ public class BallMovement : MonoBehaviour
         Vector2 v = rb.linearVelocity;
         //Get the current linear velocity of the ball.
 
+        AudioManager.Instance.PlayBallBounce();
+        //TODO Add custom ball bounce sound. Right now  using Epidemic sound.
+
         if (col.gameObject.CompareTag("Paddle")) // P1 and P2 paddles.
         {
             // Handle collision with paddle.

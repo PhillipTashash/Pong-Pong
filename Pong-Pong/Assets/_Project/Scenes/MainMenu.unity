@@ -466,6 +466,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1264113835349882559, guid: ad5c833a250aa804990494a7d759e117, type: 3}
+      propertyPath: ballBounce.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1264113835349882559, guid: ad5c833a250aa804990494a7d759e117, type: 3}
       propertyPath: 'typeSound.Array.data[0]'
       value: 
       objectReference: {fileID: 8300000, guid: c1aacbae24af8464aa092f06aa3a001f, type: 3}
@@ -485,6 +489,38 @@ PrefabInstance:
       propertyPath: 'typeSound.Array.data[4]'
       value: 
       objectReference: {fileID: 8300000, guid: 3c6c63899f96df347b748f85a84306ca, type: 3}
+    - target: {fileID: 1264113835349882559, guid: ad5c833a250aa804990494a7d759e117, type: 3}
+      propertyPath: 'ballBounce.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 41c13ffaca2e003429145be4dc1cecdc, type: 3}
+    - target: {fileID: 1264113835349882559, guid: ad5c833a250aa804990494a7d759e117, type: 3}
+      propertyPath: 'ballBounce.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 7ecd5d093da3a5749b1052add1ced646, type: 3}
+    - target: {fileID: 1264113835349882559, guid: ad5c833a250aa804990494a7d759e117, type: 3}
+      propertyPath: 'ballBounce.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: e56072f6e8fd3194bad32849c4630653, type: 3}
+    - target: {fileID: 1264113835349882559, guid: ad5c833a250aa804990494a7d759e117, type: 3}
+      propertyPath: 'ballBounce.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 81a32b6239c4ca54e95b7682e76eb656, type: 3}
+    - target: {fileID: 1264113835349882559, guid: ad5c833a250aa804990494a7d759e117, type: 3}
+      propertyPath: 'ballBounce.Array.data[4]'
+      value: 
+      objectReference: {fileID: 8300000, guid: eb3ddea162201e44096d3c03f4153d4e, type: 3}
+    - target: {fileID: 1264113835349882559, guid: ad5c833a250aa804990494a7d759e117, type: 3}
+      propertyPath: 'ballBounce.Array.data[5]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 35be12f81e8704c44b3bf89fd6b2bb99, type: 3}
+    - target: {fileID: 1264113835349882559, guid: ad5c833a250aa804990494a7d759e117, type: 3}
+      propertyPath: 'ballBounce.Array.data[6]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 5155f3a4fa5798145b6f4ff1a5ad7031, type: 3}
+    - target: {fileID: 1264113835349882559, guid: ad5c833a250aa804990494a7d759e117, type: 3}
+      propertyPath: 'ballBounce.Array.data[7]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 6d62a8bd13e7d474ba6766b504fa8463, type: 3}
     - target: {fileID: 3727924971926468480, guid: ad5c833a250aa804990494a7d759e117, type: 3}
       propertyPath: m_Name
       value: AudioManager

@@ -9,9 +9,10 @@ public class AudioManager : MonoBehaviour
     [Header("UI Sounds")]
     [SerializeField] private AudioClip[] hoverSounds;
     [SerializeField] private AudioClip[] typeSound;
+    [SerializeField] private AudioClip[] ballBounce;
     [SerializeField] private AudioClip clickSound;
     [SerializeField] private AudioClip pongStartSound;
-    [SerializeField] private AudioClip ballBounce;
+
 
     private AudioSource audioSource;
 
@@ -69,6 +70,7 @@ public class AudioManager : MonoBehaviour
     }
     public void PlayBallBounce()
     {
-        PlaySound(ballBounce);
+        if (ballBounce.Length == 0) return;
+        PlaySound(ballBounce[Random.Range(0, ballBounce.Length)]);
     }
 }

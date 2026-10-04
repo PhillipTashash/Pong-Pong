@@ -5,6 +5,8 @@ public class PongMovement : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private InputActionReference moveAction;
+    [SerializeField] private Collider2D topBound;
+    [SerializeField] private Collider2D bottomBound;
     Camera cam;
     private float halfPaddle;
 
@@ -21,8 +23,8 @@ public class PongMovement : MonoBehaviour
     {
         float move = moveAction.action.ReadValue<float>();
 
-        float top = cam.transform.position.y + cam.orthographicSize - halfPaddle;
-        float bottom = cam.transform.position.y - cam.orthographicSize + halfPaddle;
+        float top = topBound.bounds.min.y - halfPaddle;
+        float bottom = bottomBound.bounds.max.y + halfPaddle;
 
         transform.position += Vector3.up * move * moveSpeed * Time.deltaTime;
 
